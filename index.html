@@ -23,24 +23,23 @@
     </div>
 
     <form>
+
         <div class="form-group">
-          <input type="number" class="form-control" id="num-characters" aria-describedby="emailHelp" placeholder="How many characters do you want in your password?">
+          <input type="number" name="num-characters" class="form-control" id="num-characters" aria-describedby="emailHelp" placeholder="How many characters do you want in your password?">
           <small id="emailHelp" class="form-text text-muted">Max = 50</small>
+
         </div>
         
         <div class="form-group">
             <input type="number" class="form-control" id="num-upper-case" aria-describedby="emailHelp" placeholder="Number of upper case letters">
-            <small id="emailHelp" class="form-text text-muted">Max = 50</small>
         </div>
 
         <div class="form-group">
             <input type="number" class="form-control" id="num-special-xters" aria-describedby="emailHelp" placeholder="How many special characters do you want in your password?">
-            <small id="emailHelp" class="form-text text-muted">Max = 50</small>
         </div>
 
         <div class="form-group">
             <input type="number" class="form-control" id="num-numbers" aria-describedby="emailHelp" placeholder="How many numbers do you want in your password?">
-            <small id="emailHelp" class="form-text text-muted">Max = 50</small>
         </div>
 
         <button type="submit" class="btn btn-primary" id="generate-password-btn">Generate Password</button>
@@ -48,7 +47,10 @@
 
 
     <div>
-        <div id="result"></div>
+        <div id="result">
+            <p id="result"></p>
+        </div>
+
     </div>
 
 

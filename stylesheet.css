@@ -5,3 +5,8 @@ body {
     align-items: center;
     padding:3rem;
 }
+
+#result {
+    margin-top: 2rem;
+}
+
