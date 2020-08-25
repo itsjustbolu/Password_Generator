@@ -4,12 +4,8 @@ var numSpecialCharacter = document.getElementById('num-special-xters').value
 var numNumbers = document.getElementById('num-numbers').value
 
 
-document.getElementById('generate-password-btn').addEventListener('click', function(){
+document.getElementById('generate-password-btn').addEventListener('click', generatePassword)
+
+function generatePassword(){
     console.log(numTotalChars)
-
-
-    document.getElementById("result").innerHTML = numTotalChars
-
-    event.preventDefault()
-})
-
+}
