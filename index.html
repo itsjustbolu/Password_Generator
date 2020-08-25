@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" >
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <div id="title">
+        <h1>Password Generator</h1>
+        <p>This password generator generates a unique password based on your preferences.</p>
+    </div>
+
+    <!-- <div id="user-input">
+        <form>
+            <input type="number" id="num-characters" placeholder="How many characters for your password?" name="num-characters" >
+            <br>
+            <input type="number" id="num-upper-case" placeholder="How many upper case letters do you want?" name="num-upper-case" >
+            <br>
+            <input type="number" id="num-numbers" placeholder="How many numbers do you want?" name="num-numbers" >
+            <br>
+            <input type="number" id="num-special-xters" placeholder="How many special characters?" name="num-special-characters" >
+            <br>
+            <button type="submit" id="generate-button">Generate Password</button>
+        </form>
+    </div> -->
+
+    <form>
+        <div class="form-group">
+          <input type="number" class="form-control" id="num-characters" aria-describedby="emailHelp" placeholder="How many characters do you want in your password?">
+          <small id="emailHelp" class="form-text text-muted">Max = 50</small>
+        </div>
+        
+        <div class="form-group">
+            <input type="number" class="form-control" id="num-upper-case" aria-describedby="emailHelp" placeholder="Number of upper case letters">
+            <small id="emailHelp" class="form-text text-muted">Max = 50</small>
+        </div>
+
+        <div class="form-group">
+            <input type="number" class="form-control" id="num-special-xters" aria-describedby="emailHelp" placeholder="How many special characters do you want in your password?">
+            <small id="emailHelp" class="form-text text-muted">Max = 50</small>
+        </div>
+
+        <div class="form-group">
+            <input type="number" class="form-control" id="num-numbers" aria-describedby="emailHelp" placeholder="How many numbers do you want in your password?">
+            <small id="emailHelp" class="form-text text-muted">Max = 50</small>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Generate Password</button>
+      </form>
+
+
+    <div>
+        <div id="result"></div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+    <!--Bootstrap JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
