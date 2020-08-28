@@ -1,11 +1,38 @@
 body {
     font-family: 'Noto Sans JP', sans-serif;
-    width: 50%;
+    width: 100%;
     display: block;
     align-items: center;
-    padding:3rem;
+    margin: auto;
 }
 
+#title {
+    margin-top: 3rem;
+}
+
+#title h1, #title p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#user-input {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    text-align: left;
+}
+
+#generate-password-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #result {
     margin-top: 2rem;
 }
